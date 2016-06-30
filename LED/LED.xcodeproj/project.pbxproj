@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8EE7ADCE1D24B9D20042B0B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7ADCD1D24B9D20042B0B2 /* main.m */; };
+		8EE7ADD11D24B9D30042B0B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7ADD01D24B9D30042B0B2 /* AppDelegate.m */; };
+		8EE7ADD41D24B9D30042B0B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7ADD31D24B9D30042B0B2 /* ViewController.m */; };
+		8EE7ADD71D24B9D30042B0B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EE7ADD51D24B9D30042B0B2 /* Main.storyboard */; };
+		8EE7ADDC1D24B9D30042B0B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EE7ADDA1D24B9D30042B0B2 /* LaunchScreen.storyboard */; };
+		8EE7ADE71D24B9D30042B0B2 /* LEDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7ADE61D24B9D30042B0B2 /* LEDTests.m */; };
+		8EE7ADF21D24B9D30042B0B2 /* LEDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7ADF11D24B9D30042B0B2 /* LEDUITests.m */; };
+		8EE7AE001D2539CF0042B0B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EE7ADFF1D2539CF0042B0B2 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8EE7ADE31D24B9D30042B0B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EE7ADC11D24B9D20042B0B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EE7ADC81D24B9D20042B0B2;
+			remoteInfo = LED;
+		};
+		8EE7ADEE1D24B9D30042B0B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EE7ADC11D24B9D20042B0B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EE7ADC81D24B9D20042B0B2;
+			remoteInfo = LED;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8EE7ADC91D24B9D20042B0B2 /* LED.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LED.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EE7ADCD1D24B9D20042B0B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8EE7ADCF1D24B9D20042B0B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8EE7ADD01D24B9D30042B0B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8EE7ADD21D24B9D30042B0B2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8EE7ADD31D24B9D30042B0B2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8EE7ADD61D24B9D30042B0B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8EE7ADDB1D24B9D30042B0B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8EE7ADDD1D24B9D30042B0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EE7ADE21D24B9D30042B0B2 /* LEDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LEDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EE7ADE61D24B9D30042B0B2 /* LEDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEDTests.m; sourceTree = "<group>"; };
+		8EE7ADE81D24B9D30042B0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EE7ADED1D24B9D30042B0B2 /* LEDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LEDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EE7ADF11D24B9D30042B0B2 /* LEDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEDUITests.m; sourceTree = "<group>"; };
+		8EE7ADF31D24B9D30042B0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EE7ADFF1D2539CF0042B0B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EE7ADC61D24B9D20042B0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE7ADDF1D24B9D30042B0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE7ADEA1D24B9D30042B0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EE7ADC01D24B9D10042B0B2 = {
+			isa = PBXGroup;
+			children = (
+				8EE7ADCB1D24B9D20042B0B2 /* LED */,
+				8EE7ADE51D24B9D30042B0B2 /* LEDTests */,
+				8EE7ADF01D24B9D30042B0B2 /* LEDUITests */,
+				8EE7ADCA1D24B9D20042B0B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8EE7ADCA1D24B9D20042B0B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EE7ADC91D24B9D20042B0B2 /* LED.app */,
+				8EE7ADE21D24B9D30042B0B2 /* LEDTests.xctest */,
+				8EE7ADED1D24B9D30042B0B2 /* LEDUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EE7ADCB1D24B9D20042B0B2 /* LED */ = {
+			isa = PBXGroup;
+			children = (
+				8EE7ADCF1D24B9D20042B0B2 /* AppDelegate.h */,
+				8EE7ADD01D24B9D30042B0B2 /* AppDelegate.m */,
+				8EE7ADD21D24B9D30042B0B2 /* ViewController.h */,
+				8EE7ADD31D24B9D30042B0B2 /* ViewController.m */,
+				8EE7ADFF1D2539CF0042B0B2 /* Assets.xcassets */,
+				8EE7ADD51D24B9D30042B0B2 /* Main.storyboard */,
+				8EE7ADDA1D24B9D30042B0B2 /* LaunchScreen.storyboard */,
+				8EE7ADDD1D24B9D30042B0B2 /* Info.plist */,
+				8EE7ADCC1D24B9D20042B0B2 /* Supporting Files */,
+			);
+			path = LED;
+			sourceTree = "<group>";
+		};
+		8EE7ADCC1D24B9D20042B0B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8EE7ADCD1D24B9D20042B0B2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EE7ADE51D24B9D30042B0B2 /* LEDTests */ = {
+			isa = PBXGroup;
+			children = (
+				8EE7ADE61D24B9D30042B0B2 /* LEDTests.m */,
+				8EE7ADE81D24B9D30042B0B2 /* Info.plist */,
+			);
+			path = LEDTests;
+			sourceTree = "<group>";
+		};
+		8EE7ADF01D24B9D30042B0B2 /* LEDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8EE7ADF11D24B9D30042B0B2 /* LEDUITests.m */,
+				8EE7ADF31D24B9D30042B0B2 /* Info.plist */,
+			);
+			path = LEDUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8EE7ADC81D24B9D20042B0B2 /* LED */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EE7ADF61D24B9D30042B0B2 /* Build configuration list for PBXNativeTarget "LED" */;
+			buildPhases = (
+				8EE7ADC51D24B9D20042B0B2 /* Sources */,
+				8EE7ADC61D24B9D20042B0B2 /* Frameworks */,
+				8EE7ADC71D24B9D20042B0B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LED;
+			productName = LED;
+			productReference = 8EE7ADC91D24B9D20042B0B2 /* LED.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8EE7ADE11D24B9D30042B0B2 /* LEDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EE7ADF91D24B9D30042B0B2 /* Build configuration list for PBXNativeTarget "LEDTests" */;
+			buildPhases = (
+				8EE7ADDE1D24B9D30042B0B2 /* Sources */,
+				8EE7ADDF1D24B9D30042B0B2 /* Frameworks */,
+				8EE7ADE01D24B9D30042B0B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EE7ADE41D24B9D30042B0B2 /* PBXTargetDependency */,
+			);
+			name = LEDTests;
+			productName = LEDTests;
+			productReference = 8EE7ADE21D24B9D30042B0B2 /* LEDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8EE7ADEC1D24B9D30042B0B2 /* LEDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EE7ADFC1D24B9D30042B0B2 /* Build configuration list for PBXNativeTarget "LEDUITests" */;
+			buildPhases = (
+				8EE7ADE91D24B9D30042B0B2 /* Sources */,
+				8EE7ADEA1D24B9D30042B0B2 /* Frameworks */,
+				8EE7ADEB1D24B9D30042B0B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EE7ADEF1D24B9D30042B0B2 /* PBXTargetDependency */,
+			);
+			name = LEDUITests;
+			productName = LEDUITests;
+			productReference = 8EE7ADED1D24B9D30042B0B2 /* LEDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EE7ADC11D24B9D20042B0B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ZhouYong;
+				TargetAttributes = {
+					8EE7ADC81D24B9D20042B0B2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = XXRZJ9B3W5;
+					};
+					8EE7ADE11D24B9D30042B0B2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = XXRZJ9B3W5;
+						TestTargetID = 8EE7ADC81D24B9D20042B0B2;
+					};
+					8EE7ADEC1D24B9D30042B0B2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = XXRZJ9B3W5;
+						TestTargetID = 8EE7ADC81D24B9D20042B0B2;
+					};
+				};
+			};
+			buildConfigurationList = 8EE7ADC41D24B9D20042B0B2 /* Build configuration list for PBXProject "LED" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8EE7ADC01D24B9D10042B0B2;
+			productRefGroup = 8EE7ADCA1D24B9D20042B0B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EE7ADC81D24B9D20042B0B2 /* LED */,
+				8EE7ADE11D24B9D30042B0B2 /* LEDTests */,
+				8EE7ADEC1D24B9D30042B0B2 /* LEDUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EE7ADC71D24B9D20042B0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE7ADDC1D24B9D30042B0B2 /* LaunchScreen.storyboard in Resources */,
+				8EE7AE001D2539CF0042B0B2 /* Assets.xcassets in Resources */,
+				8EE7ADD71D24B9D30042B0B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE7ADE01D24B9D30042B0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE7ADEB1D24B9D30042B0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EE7ADC51D24B9D20042B0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE7ADD41D24B9D30042B0B2 /* ViewController.m in Sources */,
+				8EE7ADD11D24B9D30042B0B2 /* AppDelegate.m in Sources */,
+				8EE7ADCE1D24B9D20042B0B2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE7ADDE1D24B9D30042B0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE7ADE71D24B9D30042B0B2 /* LEDTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE7ADE91D24B9D30042B0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE7ADF21D24B9D30042B0B2 /* LEDUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8EE7ADE41D24B9D30042B0B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EE7ADC81D24B9D20042B0B2 /* LED */;
+			targetProxy = 8EE7ADE31D24B9D30042B0B2 /* PBXContainerItemProxy */;
+		};
+		8EE7ADEF1D24B9D30042B0B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EE7ADC81D24B9D20042B0B2 /* LED */;
+			targetProxy = 8EE7ADEE1D24B9D30042B0B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8EE7ADD51D24B9D30042B0B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EE7ADD61D24B9D30042B0B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8EE7ADDA1D24B9D30042B0B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EE7ADDB1D24B9D30042B0B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8EE7ADF41D24B9D30042B0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8EE7ADF51D24B9D30042B0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8EE7ADF71D24B9D30042B0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LED/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "User-Interface-Product.LED";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8EE7ADF81D24B9D30042B0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LED/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "User-Interface-Product.LED";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8EE7ADFA1D24B9D30042B0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LEDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "User-Interface-Product.LEDTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LED.app/LED";
+			};
+			name = Debug;
+		};
+		8EE7ADFB1D24B9D30042B0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LEDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "User-Interface-Product.LEDTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LED.app/LED";
+			};
+			name = Release;
+		};
+		8EE7ADFD1D24B9D30042B0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LEDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "User-Interface-Product.LEDUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LED;
+			};
+			name = Debug;
+		};
+		8EE7ADFE1D24B9D30042B0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LEDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "User-Interface-Product.LEDUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LED;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EE7ADC41D24B9D20042B0B2 /* Build configuration list for PBXProject "LED" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EE7ADF41D24B9D30042B0B2 /* Debug */,
+				8EE7ADF51D24B9D30042B0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EE7ADF61D24B9D30042B0B2 /* Build configuration list for PBXNativeTarget "LED" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EE7ADF71D24B9D30042B0B2 /* Debug */,
+				8EE7ADF81D24B9D30042B0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8EE7ADF91D24B9D30042B0B2 /* Build configuration list for PBXNativeTarget "LEDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EE7ADFA1D24B9D30042B0B2 /* Debug */,
+				8EE7ADFB1D24B9D30042B0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8EE7ADFC1D24B9D30042B0B2 /* Build configuration list for PBXNativeTarget "LEDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EE7ADFD1D24B9D30042B0B2 /* Debug */,
+				8EE7ADFE1D24B9D30042B0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8EE7ADC11D24B9D20042B0B2 /* Project object */;
+}
