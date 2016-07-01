@@ -417,7 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LED/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "User-Interface-Product.LED";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,7 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LED/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "User-Interface-Product.LED";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -501,6 +501,7 @@
 				8EE7ADF81D24B9D30042B0B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EE7ADF91D24B9D30042B0B2 /* Build configuration list for PBXNativeTarget "LEDTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +510,7 @@
 				8EE7ADFB1D24B9D30042B0B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EE7ADFC1D24B9D30042B0B2 /* Build configuration list for PBXNativeTarget "LEDUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +519,7 @@
 				8EE7ADFE1D24B9D30042B0B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

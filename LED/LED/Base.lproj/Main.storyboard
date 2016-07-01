@@ -54,7 +54,7 @@
                                         <color key="maximumTrackTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <action selector="frequencyLed:" destination="BYZ-38-t0r" eventType="valueChanged" id="ruB-uM-75W"/>
+                                            <action selector="frequencyLed:" destination="BYZ-38-t0r" eventType="valueChanged" id="1Mr-Tv-fJb"/>
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35Q-JV-LRy">
@@ -105,7 +105,7 @@
                                         <state key="normal" backgroundImage="OFF "/>
                                         <state key="selected" backgroundImage="ON"/>
                                         <connections>
-                                            <action selector="flashingEnableBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYk-1T-b2W"/>
+                                            <action selector="emergencyEnableBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aDL-vr-mw6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFf-BT-RBx">
@@ -187,10 +187,10 @@
                             <constraint firstItem="ytQ-4r-WXd" firstAttribute="top" secondItem="YJB-tU-Otv" secondAttribute="bottom" constant="30" id="PqF-GE-bbe"/>
                             <constraint firstItem="ytQ-4r-WXd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="T6W-Wb-KTe"/>
                             <constraint firstItem="bsY-fb-svX" firstAttribute="top" secondItem="Bjt-Ku-3Al" secondAttribute="bottom" constant="8" id="U4h-b7-4iq"/>
-                            <constraint firstItem="Jvh-2s-tdp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="YXw-3P-Rrv"/>
                             <constraint firstItem="Bjt-Ku-3Al" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZqB-cB-4V0"/>
                             <constraint firstItem="N2n-gC-jmD" firstAttribute="bottom" secondItem="bsY-fb-svX" secondAttribute="bottom" id="agm-fh-sDK"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ytQ-4r-WXd" secondAttribute="bottom" id="b6S-r0-zyN"/>
+                            <constraint firstItem="Jvh-2s-tdp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="gX6-HQ-nXJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ytQ-4r-WXd" secondAttribute="bottom" id="hkr-Fz-NrI"/>
                             <constraint firstItem="Bjt-Ku-3Al" firstAttribute="top" secondItem="Jvh-2s-tdp" secondAttribute="bottom" constant="20" id="nlM-9x-XMJ"/>
                             <constraint firstItem="YJB-tU-Otv" firstAttribute="top" secondItem="N2n-gC-jmD" secondAttribute="bottom" constant="20" id="su9-Lo-LDe"/>
                             <constraint firstItem="N2n-gC-jmD" firstAttribute="top" secondItem="bsY-fb-svX" secondAttribute="top" id="ucu-fj-kgF"/>
