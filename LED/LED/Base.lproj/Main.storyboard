@@ -206,6 +206,7 @@
                         <outlet property="frequencyLED" destination="Lby-7G-HrO" id="IoJ-gG-1hq"/>
                         <outlet property="ledEnableBtn" destination="Bjt-Ku-3Al" id="gWL-vF-nWJ"/>
                         <outlet property="stateLabel" destination="Jvh-2s-tdp" id="qZ9-sQ-zUb"/>
+                        <outlet property="urgencyBtn" destination="TVc-FQ-c3v" id="hll-82-77V"/>
                         <outlet property="warningBtn" destination="ZFf-BT-RBx" id="574-SK-0Tn"/>
                     </connections>
                 </viewController>

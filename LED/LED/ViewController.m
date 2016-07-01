@@ -52,6 +52,10 @@
 //报警警示灯
 @property (weak, nonatomic) IBOutlet UIButton *warningBtn;
 
+//紧急模式
+@property (weak, nonatomic) IBOutlet UIButton *urgencyBtn;
+
+
 
 @end
 
@@ -67,6 +71,7 @@
     }
     return _captureSession;
 }
+
 
 -(AVCaptureDevice *)captureDevice
 {
@@ -115,9 +120,22 @@
         [self.captureDevice unlockForConfiguration];
         [self.captureSession commitConfiguration];
         [self.captureSession stopRunning];
-
+        
+//        查看闪光模式是否开启如果开启，则关闭.查看sos模式是否开启，如果开启则关闭。
+        if (self.flashOnOffControlModeBtn.selected) {
+            [self.timer invalidate];
+            [self.flashOnOffControlModeBtn setBackgroundImage:[UIImage imageNamed:@"OFF"] forState:UIControlStateNormal];
+            
+        }
+        if (self.urgencyBtn.selected) {
+            [self.urgecyTimer invalidate];
+            [self.warningBtn setBackgroundImage:[UIImage imageNamed:@"waring_green"] forState:UIControlStateNormal];
+        }
+        [self.rep removeFromSuperlayer];
+        
     }
 }
+
 
 
 - (IBAction)frequencyLed:(UISlider *)sender
@@ -150,16 +168,22 @@
     float leval = slider.value;
     slider.continuous = YES;
     self.brightnessSlider.continuous = YES;
-    if ([self.captureDevice hasTorch] && leval > 0  && leval <= 1.0) {
-        [self.captureDevice lockForConfiguration:nil];
-        [self.captureDevice setTorchModeOnWithLevel:slider.value error:nil];
-        [self.captureDevice unlockForConfiguration];
-    }
-    else if([self.captureDevice hasTorch] && leval == 0)
-    {
-        [self.captureDevice lockForConfiguration:nil];
-        [self.captureDevice setTorchMode:AVCaptureTorchModeOff];
-        [self.captureDevice unlockForConfiguration];
+    if (self.ledEnableBtn.selected) {
+        if ([self.captureDevice hasTorch] && leval > 0  && leval <= 1.0) {
+            [self.captureDevice lockForConfiguration:nil];
+            [self.captureDevice setTorchModeOnWithLevel:slider.value error:nil];
+            [self.captureDevice unlockForConfiguration];
+        }
+        else if([self.captureDevice hasTorch] && leval == 0)
+        {
+            [self.captureDevice lockForConfiguration:nil];
+            [self.captureDevice setTorchMode:AVCaptureTorchModeOff];
+            [self.captureDevice unlockForConfiguration];
+        }
+
+    }else{
+//        tips
+        [self tips];
     }
 }
 
@@ -208,6 +232,7 @@
     if (button.selected)
     {
         [self frequencyLed:self.frequencyLED];
+        [self.urgecyTimer invalidate];
     }
 //    关闭闪光模式
     else
@@ -221,15 +246,18 @@
 - (IBAction)flashingEnableBtn:(UIButton *)sender
 {
     UIButton* button = (UIButton*)sender;
-     button.selected = !button.selected;
+    self.urgencyBtn = button;
     if (self.ledEnableBtn.selected)
     {
+         button.selected = !button.selected;
         if (button.selected)
         {
             [self.urgecyTimer invalidate];
             [self sosLayer];
             
             self.urgecyTimer = [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(sosModel) userInfo:nil repeats:YES];
+            
+            [self.timer invalidate];
             
         }
         else
@@ -243,17 +271,24 @@
     /**创建提醒视图**/
     else
     {
-        UIAlertController* alertController = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"请先打开LED开关" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction* actionTip = [UIAlertAction actionWithTitle:@"确定" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action)
-        {
-            [alertController dismissViewControllerAnimated:YES completion:nil];
-        }];
-        [alertController addAction:actionTip];
-        [self presentViewController:alertController animated:YES completion:nil];
+        button.selected = button.selected;
+        [self tips];
+        [self.urgecyTimer invalidate];
     }
 }
 
 
+- (void) tips
+{
+    UIAlertController* alertController = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"请先打开LED开关" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* actionTip = [UIAlertAction actionWithTitle:@"确定" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action)
+                                {
+                                    [alertController dismissViewControllerAnimated:YES completion:nil];
+                                }];
+    [alertController addAction:actionTip];
+    [self presentViewController:alertController animated:YES completion:nil];
+
+}
 
 
 //紧急模式
@@ -261,9 +296,8 @@
 {
     [self sosTimer];
     self.warningBtn.enabled = !self.warningBtn.enabled;
-    [self.warningBtn setBackgroundImage:[UIImage imageNamed:@"waring_yellow"] forState:UIControlStateDisabled];
+
     [self.warningBtn setBackgroundImage:[UIImage imageNamed:@"waring_red"] forState:UIControlStateNormal];
-    
 }
 
 
@@ -295,7 +329,6 @@
     // 给视图层添加动画效果
     [layer addAnimation:animation forKey:nil];
     
-    
     [self.rep addSublayer:layer];
     
     int count = 30;
@@ -308,7 +341,6 @@
     self.rep.instanceDelay = animation.duration / count;
     
     [self.backGroundReferencnView.layer addSublayer:self.rep];
-    
 }
 
 
@@ -325,11 +357,13 @@
     [backgroundImageView setImage:[UIImage imageNamed:@"mainBackground.jpg"]];
     [self.view insertSubview:backgroundImageView atIndex:0];
     
+    /**调整滚动条的方向**/
     //    [self.brightnessSlider setTransform:CGAffineTransformMakeRotation(270*M_PI/180)];
     
     self.frequencyDisplay.text = [NSString stringWithFormat:@"-   0.00Hz   +"];
     
 }
+
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -338,7 +372,6 @@
     self.indicatorWidth = self.backGroundReferencnView.frame.size.width;
 
 }
-
 
 
 - (UIStatusBarStyle)preferredStatusBarStyle
