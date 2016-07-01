@@ -9,6 +9,10 @@
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
 
+#define kWidth self.view.frame.size.width
+#define kHeight self.view.frame.size.height
+
+
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *ledEnableBtn;
@@ -55,11 +59,13 @@
 //紧急模式
 @property (weak, nonatomic) IBOutlet UIButton *urgencyBtn;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *powerEnableMarginWidth;
+
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *powerEnableMarginHeight;
+
 /**sosLabel**/
 @property(nonatomic, retain)UILabel* sosLabel;
-
-
-
 
 @end
 
@@ -157,7 +163,7 @@
         //    频率调节
         self.timer = [NSTimer scheduledTimerWithTimeInterval:self.frequencyLED.value target:self selector:@selector(sosTimer) userInfo:nil repeats:YES];
 
-        self.frequencyDisplay.text = [NSString stringWithFormat:@"-   %.2fHz   +",1.0/slider.value];
+        self.frequencyDisplay.text = [NSString stringWithFormat:@"+   %.2fHz   -",1.0/slider.value];
     }
 }
 
@@ -351,7 +357,7 @@
 
     self.rep.backgroundColor = [UIColor clearColor].CGColor;
     CALayer *layer = [CALayer layer];
-    layer.position = CGPointMake(self.rep.bounds.size.width / 2, 20);
+    layer.position = CGPointMake(self.rep.bounds.size.width / 2, 0);
     layer.bounds = CGRectMake(0, 0, 8, 8);
     layer.cornerRadius = 4;
     layer.backgroundColor = [UIColor redColor].CGColor;
@@ -395,6 +401,7 @@
 }
 
 
+
 #pragma mark**********关闭光源************
 - (void)closeLightSource
 {
@@ -416,6 +423,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     self.ledEnableBtn.selected = NO;
     //    创建输入设备
     AVCaptureDeviceInput* deviceInput = [[AVCaptureDeviceInput alloc] initWithDevice:self.captureDevice error:nil];
@@ -430,17 +438,21 @@
     /**调整滚动条的方向**/
     //    [self.brightnessSlider setTransform:CGAffineTransformMakeRotation(270*M_PI/180)];
     
-    self.frequencyDisplay.text = [NSString stringWithFormat:@"-   0.00Hz   +"];
+    self.frequencyDisplay.text = [NSString stringWithFormat:@"+   0.00Hz   -"];
 }
 
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [self.backGroundReferencnView layoutIfNeeded];
+    self.powerEnableMarginWidth.constant = 0.30*kWidth;
+    self.powerEnableMarginHeight.constant = 0.30*kWidth;
+
     self.indicatorHeight = self.backGroundReferencnView.frame.size.height ;
     self.indicatorWidth = self.backGroundReferencnView.frame.size.width ;
 
 }
+
 
 
 - (UIStatusBarStyle)preferredStatusBarStyle
