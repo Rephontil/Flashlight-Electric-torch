@@ -1,2 +1,3 @@
 # Flashlight-Electric-torch
-一款多功能模式的iPhone手电筒（sos模式、亮度可调、LED闪烁频率可调）
+开心，大学毕业了🎓。今天上午手写了一个iPhone上面的手电筒🔦应用。
+iPhone多功能手电筒源码（支持SOS模式，可任意调节亮度，可自由设置LED闪烁频率）
